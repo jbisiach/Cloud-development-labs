@@ -1,0 +1,9 @@
+The basis of the Lab comes from the source files developed in Lab 2.
+
+This applications consists of three worker roles, with four web roles providing the user interface.
+ 
+Queues that the worker roles read from and write to were created in the local emulator.
+
+Changes made to the Lab 2 source code changes include intializing queues in an Azure Storage Account.  A new layout page called ReportPage was created which displays required information from the database hosted in Azure Cloud.  Additionally, the InitQueues() method was moved into the worker role OnStart() method to eliminate unecessery calls in the RunAsync() method.
+
+MySQL was used to create the relational databe and Azure Cosmos for the non-relational database.  Please note that the Azure storage accout was created using another student's account as my own free trial had already expired.
